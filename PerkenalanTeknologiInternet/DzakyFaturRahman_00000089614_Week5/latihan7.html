@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan 7</title>
+    </head>
+    <body>
+        <script>
+            document.write("<h2>Grafik Jumlah Kehadiran Mahasiswa</h2>");
+            
+            for(i = 1; i <= 5; i++){
+                switch(i){
+                    case 1: hari = "Senin"; break;
+                    case 2: hari = "Selasa"; break;
+                    case 3: hari = "Rabu"; break;
+                    case 4: hari = "Kamis"; break;
+                    case 5: hari = "Jumat"; break;
+                }
+                jumlahMhs = window.prompt("Berapa jumlah mahasiswa masuk pada hari " + hari + "?");
+                document.write(hari + ": ");
+                for(j = 0; j < jumlahMhs; j++){
+                    document.write("x");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </body>
+</html>

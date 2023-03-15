@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan 6</title>
+    </head>
+    <body>
+        <script>
+            function isPrime(n){
+                if(n == 1 || n == 0){
+                    return false;
+                }
+
+                for(j = 2; j < n; j++){
+                    if(n % j == 0){
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            input = window.prompt("Masukkan input");
+            
+            for(i = 1; i <= input; i++){
+                if(isPrime(i)){
+                    document.write(i + "<br>");
+                }
+            }        
+        </script>
+    </body>
+</html>

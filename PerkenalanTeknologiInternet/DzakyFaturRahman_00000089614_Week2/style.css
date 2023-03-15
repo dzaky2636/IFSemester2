@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#logo {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+    text-shadow: 2px 2px 2px #000;
+    padding: 30px 30px;
+}
+
+ul#nav {
+    margin: 0;
+    padding: 20px;
+}
+
+ul#nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul#nav li a{
+    text-decoration: none;
+    padding: 10px 0;
+    color: deeppink;
+    font-weight: bold;
+}
+
+ul#nav li a:hover{
+    color: tomato;
+    border-bottom: 3px solid tomato;
+}
+
+/*  */
+
+button {
+    background-color: pink;
+    color: deeppink;
+    font-size: 16px;
+    text-shadow:1px 1px 1px #000;
+    padding: 10px 16px;
+    border: 2px solid deeppink;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color:whitesmoke;
+}
+
+/*  */
+
+ul#portofolio {
+    text-align: center;
+}
+
+ul#portofolio li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+ul#portofolio li img{
+    float: left;
+    padding: 20px 20px;
+    margin: 5px 5px ;
+    background-color: rgb(228, 228, 228);
+}
+
+ul#portofolio li img:hover{
+    background-color: deeppink;
+}
+
+/*  */
+
+input[type=text]{
+    /* background-color: yellow; */
+    background-image: linear-gradient(rgb(228, 163, 0), yellow);
+}
+
+/*  */
+
+#footer {
+    clear: both;
+    background-color: lightgray;
+    padding-bottom: 40%;
+}
+
+/*  */
+
+#servistable{
+    width: 430px;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+#servistable td, #servistable th{
+    padding: 5px 8px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+#servistable tr:hover, #servistable tr:hover{
+    background-color: #f2f2f2;
+}
+
+p{
+    padding-left: 20px;
+}
+
+#tableform{
+    width: 430px;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+#tableform td, #servistable th{
+    padding: 5px 8px;
+}
+
+#servistable tr:hover, #servistable tr:hover{
+    background-color: #f2f2f2;
+}

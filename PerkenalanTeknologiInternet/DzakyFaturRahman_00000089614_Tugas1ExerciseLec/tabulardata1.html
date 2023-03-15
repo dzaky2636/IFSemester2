@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Tabular Data 1
+    </title>
+    <style>
+        
+
+        .myTable{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            border: 1px solid #d6dde6;
+            border-bottom-left-radius: 10px;
+            border-collapse: collapse;
+            box-shadow: 3px 6px #9b9b9b;
+        }
+
+        .myTable tr:nth-child(n+3){
+            border-top: 2px solid #d6dde6;
+        }
+
+        .myTable td{
+            padding: 0.6em;
+        }
+
+        .myTable th{
+            background: linear-gradient(0deg, rgba(35,47,120,1) 70%, rgba(2,0,36,1) 100%); 
+            color: white;
+            font-weight: bold;
+            padding: 0.4em;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .myTable tr:nth-child(odd){
+            background-color:  #dfe7f2;
+            color: #000000;
+            font-style: normal;
+            transition: 0.3s;
+        }
+
+        .myTable tr:last-child td{
+            background-color: #ececec;
+            transition: 0.3s;
+        }
+
+        .myTable tr:hover:not(:first-child, :last-child ){
+            background: rgb(199,199,199);
+            background: linear-gradient(270deg, rgba(199,199,199,1) 99%, rgba(228,0,0,1) 100%); 
+            transition: 0.3s;
+            font-style: italic;
+            border-left: 4px solid #e40000;
+        }
+
+        .myTable .center{
+            text-align: center;
+        }
+
+        #average{
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<table class="myTable">
+    <tr>
+        <th width="240">Student ID</th>
+        <th width="270">Student Name</th>
+        <th width="200">GPA</th>
+    </tr>
+    <tr>
+        <td class="center">201801</td>
+        <td>John Doe</td>
+        <td class="center">4.00</td>
+    </tr>
+    <tr>
+        <td class="center">201802</td>
+        <td>John Wick</td>
+        <td class="center">3.80</td>
+    </tr>
+    <tr>
+        <td class="center">201803</td>
+        <td>John Thor</td>
+        <td class="center">3.90</td>
+    </tr>
+    <tr>
+        <td class="center">201804</td>
+        <td>John Doel</td>
+        <td class="center">3.70</td>
+    </tr>
+    <tr>
+        <td class="center">201805</td>
+        <td>John John</td>
+        <td class="center">3.80</td>
+    </tr>
+    <tr id="average">
+        <td colspan="2" style="text-align: right;">Average GPA</td>
+        <td class="center">3.84</td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan 4</title>
+    </head>
+    <body>
+        <script>
+            do{
+                selectInput = window.prompt("Hitung apa?\n1. Luas\n2. Keliling");
+            }while(selectInput !== "1" && selectInput !== "2" && selectInput !== "luas" && selectInput !== "keliling");
+
+            p = parseFloat(window.prompt("Masukkan panjang"));
+            l = parseFloat(window.prompt("Masukkan lebar"));
+            switch(selectInput){
+                case "1":
+                case "luas":
+                    alert("Luas persegi panjang: " + (p * l));
+                    break;
+                case "2":
+                case "keliling":
+                    alert("Keliling persegi: " + (2 * (p + l)));
+                    break;
+            }
+
+
+        </script>
+    </body>
+</html>

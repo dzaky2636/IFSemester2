@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan 2</title>
+    </head>
+    <body>
+        <script>
+            function nilaiTotal(tugas, uts, uas){
+                nilai_akhir = (tugas * 0.4) + (uts * 0.3) + (uas * 0.3);
+
+                if(nilai_akhir <= 44.99 && nilai_akhir > 0){
+                    grade = "E";
+                }else if(nilai_akhir <= 54.99){
+                    grade = "D";
+                }else if(nilai_akhir <= 59.99){
+                    grade = "C";
+                }else if(nilai_akhir <= 64.99){
+                    grade = "C+";
+                }else if(nilai_akhir <= 69.99){
+                    grade = "B-";
+                }else if(nilai_akhir <= 74.99){
+                    grade = "B";
+                }else if(nilai_akhir <= 79.99){
+                    grade = "B+";
+                }else if(nilai_akhir <= 84.99){
+                    grade = "A-";
+                }else if(nilai_akhir <= 100){
+                    grade = "A";
+                }else{
+                    grade = "tidak valid.";
+                }
+
+                return grade;
+            }
+
+            jumlahMhs = window.prompt("Masukkan jumlah mahasiswa: ");
+
+            for(i = 1; i <= jumlahMhs; i++){
+                nama = window.prompt("Nama mahasiswa ke-" + i);
+                tugas = window.prompt("Nilai Tugas mhs ke-" + i);
+                uts = window.prompt("Nilai UTS mhs ke-" + i);
+                uas = window.prompt("Nilai UAS mhs ke-" + i);
+                grade = nilaiTotal(tugas, uts, uas);
+
+                document.write("<br><br>" + i + ". " + nama + "<br>");
+                document.write("Tugas: " + tugas);
+                document.write("<br> UTS: " + uts);
+                document.write("<br> UAS: " + uas);
+                document.write("<br> Nilai Akhir: " + ((tugas * 0.4) + (uts * 0.3) + (uas * 0.3)));
+                document.write("<br> Grade: " + grade);
+            }
+        </script>
+    </body>
+</html>

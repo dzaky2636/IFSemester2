@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan 1</title>
+    </head>
+    <body>
+        <script>
+            nama = window.prompt("Nama");
+            tugas = window.prompt("Nilai Tugas");
+            uts = window.prompt("Nilai UTS");
+            uas = window.prompt("Nilai UAS");
+            nilai_akhir = (tugas * 0.4) + (uts * 0.3) + (uas * 0.3);
+
+            alert(nama + ", " + cekNilai(nilai_akhir));
+
+            function cekNilai(nilai){
+                if(nilai_akhir >= 60){
+                    statusLulus = "Lulus";
+                }else{
+                    statusLulus = "Gagal";
+                }
+
+                if(nilai_akhir <= 44.99 && nilai_akhir > 0){
+                    return "nilai anda E, anda " + statusLulus;
+                }else if(nilai_akhir <= 54.99){
+                    return "nilai anda D, anda " + statusLulus;
+                }else if(nilai_akhir <= 59.99){
+                    return "nilai anda C, anda " + statusLulus;
+                }else if(nilai_akhir <= 64.99){
+                    return "nilai anda C+, anda " + statusLulus;
+                }else if(nilai_akhir <= 69.99){
+                    return "nilai anda B-, anda " + statusLulus;
+                }else if(nilai_akhir <= 74.99){
+                    return "nilai anda B, anda " + statusLulus;
+                }else if(nilai_akhir <= 79.99){
+                    return "nilai anda B+, anda " + statusLulus;
+                }else if(nilai_akhir <= 84.99){
+                    return "nilai anda A-, anda " + statusLulus;
+                }else if(nilai_akhir <= 100){
+                    return "nilai anda A, anda " + statusLulus;
+                }else{
+                    return "nilai anda tidak valid.";
+                }
+            }
+        </script>
+    </body>
+</html>
