@@ -1,0 +1,17 @@
+001#Dzaky Fatur Rahman#Informatika#
+002#Michael Afton#Kriminologi#
+003#Artagan Garmelie#Teater#
+004#Ellie Johnson#Astronomi#
+005#Jeremy Elbertson#Teater#
+006#Grog Strongjaw#Olahraga#
+007#Lucien Nonagon#Informatika#
+008#Scanlan Shorthalt#Ekonomi#
+009#Duncan#Informatika#
+010#Eddie#DKV#
+011#Vex'ahlia#Hukum#
+012#Vax'ildan#Hukum#
+013#Death, The Hound#Kedokteran#
+014#Juju Beeatrix#Seni#
+015#Ru Vaul#Seni#
+016#Ghost Hands#Informatika#
+017#Hitman 47#Bisnis#
